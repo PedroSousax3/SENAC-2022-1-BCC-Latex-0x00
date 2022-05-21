@@ -1,0 +1,9 @@
+PHONY: all
+
+all: compilar teste.out
+
+compilar: teste.c
+	gcc teste.c -o teste.out
+
+teste.out: compilar
+	./teste.out

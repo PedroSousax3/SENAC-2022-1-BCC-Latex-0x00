@@ -11,7 +11,10 @@ tabela.tex: main
 doc: tabela.tex
 	tectonic main.tex 
 
-PHONY: clear
+limpar: tabela.tex main
+	rm -f tabela.tex main
+
+PHONY: clean
 
 clean:
-	rm -f tabela.tex main
+	rm -f tabela.tex
